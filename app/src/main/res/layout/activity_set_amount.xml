@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".presentation.ui.activity.SendTokenScreen.SetAmountActivity">
+
+    <TextView
+        android:id="@+id/tv_amount"
+        style="@style/text_style_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:text="@string/amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_50dp"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:layout_marginEnd="@dimen/margin_50dp"
+        android:background="@drawable/background_edittext_one"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/zero_number"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:paddingStart="@dimen/margin_10dp"
+        android:paddingTop="@dimen/margin_15dp"
+        android:paddingEnd="@dimen/margin_10dp"
+        android:paddingBottom="@dimen/margin_15dp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_amount" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        style="@style/text_style_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:text="@string/balance_ether"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_amount" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_40dp"
+        android:layout_marginEnd="@dimen/margin_40dp"
+        android:layout_marginBottom="@dimen/margin_40dp"
+        android:background="@drawable/background_two"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_notification"
+        style="@style/text_style_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insufficient_balance"
+        android:textColor="@color/red_1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_balance"
+        tools:ignore="TextContrastCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

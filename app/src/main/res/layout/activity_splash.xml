@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context="co.dds.cryptowallet.presentation.ui.activity.splashScreen.SplashActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_100dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_100dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/metamask_name" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager_onboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:layout_marginBottom="@dimen/margin_50dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_get_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_app_name" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_dot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_get_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpager_onboard"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicator="@null"
+            app:tabIndicatorHeight="@dimen/size_0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/btn_get_start"
+            style="@style/text_style_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_60dp"
+            android:layout_marginEnd="@dimen/margin_60dp"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:background="@drawable/background_one"
+            android:text="@string/get_start"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

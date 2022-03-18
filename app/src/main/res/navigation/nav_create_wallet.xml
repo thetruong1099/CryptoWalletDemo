@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_create_wallet"
+    app:startDestination="@id/walletSetupFragment">
+
+    <fragment
+        android:id="@+id/walletSetupFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.walletSetupScreen.WalletSetupFragment"
+        android:label="fragment_wallet_setup"
+        tools:layout="@layout/fragment_wallet_setup" >
+        <action
+            android:id="@+id/action_walletSetupFragment_to_setPasswordForAppFragment"
+            app:destination="@id/setPasswordForAppFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_walletSetupFragment_to_importSecretPhraseFragment"
+            app:destination="@id/importSecretPhraseFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadGenerateWalletFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.walletSetupScreen.LoadGenerateWalletFragment"
+        android:label="fragment_load_generate_wallet"
+        tools:layout="@layout/fragment_load_generate_wallet" >
+        <action
+            android:id="@+id/action_loadGenerateWalletFragment_to_seedPhraseShowFragment"
+            app:destination="@id/seedPhraseShowFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/setPasswordForAppFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.walletSetupScreen.SetPasswordForAppFragment"
+        android:label="fragment_set_password_for_app"
+        tools:layout="@layout/fragment_set_password_for_app" >
+        <action
+            android:id="@+id/action_setPasswordForAppFragment_to_loadGenerateWalletFragment"
+            app:destination="@id/loadGenerateWalletFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/importSecretPhraseFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.walletSetupScreen.ImportSecretPhraseFragment"
+        android:label="fragment_import_secret_phrase"
+        tools:layout="@layout/fragment_import_secret_phrase" />
+    <fragment
+        android:id="@+id/seedPhraseShowFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.walletSetupScreen.SeedPhraseShowFragment"
+        android:label="fragment_seed_phrase_show"
+        tools:layout="@layout/fragment_seed_phrase_show" >
+        <action
+            android:id="@+id/action_seedPhraseShowFragment_to_seedPhraseConfirmFragment"
+            app:destination="@id/seedPhraseConfirmFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/seedPhraseConfirmFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.walletSetupScreen.SeedPhraseConfirmFragment"
+        android:label="fragment_seed_phrase_confirm"
+        tools:layout="@layout/fragment_seed_phrase_confirm" />
+</navigation>

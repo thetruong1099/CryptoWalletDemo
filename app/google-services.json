@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "414301673036",
+    "project_id": "crypto-wallet-10f34",
+    "storage_bucket": "crypto-wallet-10f34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414301673036:android:8025a6ed0081eaf0f486e9",
+        "android_client_info": {
+          "package_name": "co.dss.cryptowallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "414301673036-4t2r3idu5b4m94fa0fg5frbu9ff0lqq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7_rOTlXIjX6_Kxnj__UHc7cpX5t79qHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "414301673036-4t2r3idu5b4m94fa0fg5frbu9ff0lqq5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

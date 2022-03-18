@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".presentation.ui.fragment.importScreen.ImportNftFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/text_style_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30dp"
+        android:layout_marginTop="@dimen/margin_30dp"
+        android:text="@string/address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edt_contract_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_30dp"
+        android:background="@drawable/background_edittext_three"
+        android:ems="10"
+        android:hint="@string/contract_address"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:padding="@dimen/margin_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_edt_contract_address_empty_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="@string/edit_text_empty"
+        android:textColor="@color/red_1"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/edt_contract_address"
+        app:layout_constraintTop_toBottomOf="@id/edt_contract_address" />
+
+    <TextView
+        android:id="@+id/tv_token_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30dp"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:text="@string/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_contract_address" />
+
+    <EditText
+        android:id="@+id/edt_token_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_30dp"
+        android:background="@drawable/background_edittext_three"
+        android:ems="10"
+        android:hint="@string/enter_the_collectible_id"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="@dimen/margin_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_token_id"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/tv_edt_token_id_empty_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:text="@string/edit_text_empty"
+        android:textColor="@color/red_1"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/edt_token_id"
+        app:layout_constraintTop_toBottomOf="@id/edt_token_id" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30dp"
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:background="@drawable/background_five"
+        android:paddingStart="@dimen/margin_20dp"
+        android:paddingEnd="@dimen/margin_20dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/btn_import"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_token_id"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btn_import"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:layout_marginEnd="@dimen/margin_30dp"
+        android:background="@drawable/background_one"
+        android:paddingStart="@dimen/margin_20dp"
+        android:paddingEnd="@dimen/margin_20dp"
+        android:text="@string/_import"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@id/edt_token_id"
+        tools:ignore="TextContrastCheck" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_status_import_nft"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0dp"
+        android:layout_marginTop="@dimen/margin_40dp"
+        android:layout_marginBottom="@dimen/margin_40dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cancel"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/load_rappi_animation"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

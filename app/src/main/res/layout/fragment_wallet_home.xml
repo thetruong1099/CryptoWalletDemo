@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".presentation.ui.fragment.homeScreen.WalletHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/size_0dp"
+            app:cardCornerRadius="@dimen/size_40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="@dimen/size_80dp"
+                android:layout_height="@dimen/size_80dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/drawer_bg" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_account_name"
+            style="@style/text_style_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:text="@string/account_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view_avatar" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            style="@style/text_style_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:text="@string/balance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_account_name" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/text_style_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_100dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_100dp"
+            android:background="@drawable/background_textview_two"
+            android:ellipsize="middle"
+            android:lines="1"
+            android:paddingStart="@dimen/margin_15dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:paddingEnd="@dimen/margin_15dp"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:text="@string/public_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_balance"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:id="@+id/btn_receive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.37"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_address">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:background="@drawable/background_six"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/margin_10dp"
+                app:srcCompat="@drawable/outline_vertical_align_bottom_24"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                style="@style/text_style_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:gravity="center"
+                android:text="@string/receive"
+                tools:ignore="TextContrastCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/btn_receive"
+            app:layout_constraintStart_toEndOf="@id/btn_receive"
+            app:layout_constraintTop_toTopOf="@id/btn_receive">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:background="@drawable/background_six"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/margin_10dp"
+                app:srcCompat="@drawable/outline_north_east_24"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                style="@style/text_style_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:gravity="center"
+                android:text="@string/send"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_token_nft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_receive"
+            app:tabIndicatorColor="@color/blue_1"
+            app:tabSelectedTextColor="@color/blue_1"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tokens" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nfts" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewpager_token_nft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout_token_nft" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

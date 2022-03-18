@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".presentation.ui.fragment.walletSetupScreen.WalletSetupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/welcome_bg3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_wallet_setup"
+            style="@style/text_style_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:gravity="center"
+            android:text="@string/wallet_setup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_wallet_setup_description"
+            style="@style/text_style_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:text="@string/wallet_setup_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wallet_setup"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_import_secret_recovery_phrase"
+            style="@style/text_style_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_45dp"
+            android:layout_marginEnd="@dimen/margin_45dp"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:background="@drawable/background_one"
+            android:text="@string/import_using_secret_recovery_phrase"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@id/btn_create_new_wallet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/btn_create_new_wallet"
+            style="@style/text_style_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_45dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginEnd="@dimen/margin_45dp"
+            android:layout_marginBottom="@dimen/margin_80dp"
+            android:background="@drawable/background_two"
+            android:text="@string/create_a_new_wallet"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/btn_terms_condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/btn_terms_condition"
+            style="@style/text_style_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_30dp"
+            android:gravity="center"
+            android:text="@string/by_proceeding_you_agree_to_these_terms_and_condition"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main_wallet"
+    app:startDestination="@id/walletHomeFragment">
+
+    <fragment
+        android:id="@+id/walletHomeFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.homeScreen.WalletHomeFragment"
+        android:label="fragment_wallet_home"
+        tools:layout="@layout/fragment_wallet_home" >
+        <action
+            android:id="@+id/action_walletHomeFragment_to_importNftFragment"
+            app:destination="@id/importNftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.settingScreen.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_confirmPasswordFragment"
+            app:destination="@id/confirmPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmPasswordFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.settingScreen.ConfirmPasswordFragment"
+        android:label="fragment_confirm_password"
+        tools:layout="@layout/fragment_confirm_password" >
+        <action
+            android:id="@+id/action_confirmPasswordFragment_to_showSecretRecoveryPhraseFragment"
+            app:destination="@id/showSecretRecoveryPhraseFragment" />
+        <action
+            android:id="@+id/action_confirmPasswordFragment_to_showPrivateKeyFragment"
+            app:destination="@id/showPrivateKeyFragment" />
+        <action
+            android:id="@+id/action_confirmPasswordFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <argument
+            android:name="dataOfSettingFragment"
+            app:argType="co.dds.cryptowallet.presentation.until.NavigationFragmentSetting" />
+    </fragment>
+    <fragment
+        android:id="@+id/showSecretRecoveryPhraseFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.settingScreen.ShowSecretRecoveryPhraseFragment"
+        android:label="fragment_show_secret_recovery_phrase"
+        tools:layout="@layout/fragment_show_secret_recovery_phrase" />
+    <fragment
+        android:id="@+id/showPrivateKeyFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.settingScreen.ShowPrivateKeyFragment"
+        android:label="fragment_show_private_key"
+        tools:layout="@layout/fragment_show_private_key" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.settingScreen.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/importNftFragment"
+        android:name="co.dds.cryptowallet.presentation.ui.fragment.importScreen.ImportNftFragment"
+        android:label="fragment_import_nft"
+        tools:layout="@layout/fragment_import_nft" />
+</navigation>

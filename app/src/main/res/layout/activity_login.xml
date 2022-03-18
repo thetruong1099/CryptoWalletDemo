@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".presentation.ui.activity.loginScreen.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/img_fox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_150dp"
+            android:layout_marginTop="@dimen/margin_100dp"
+            android:layout_marginEnd="@dimen/margin_150dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/fox"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tv_welcome_back"
+            style="@style/text_style_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_50dp"
+            android:gravity="center"
+            android:text="@string/welcome_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_fox" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_40dp"
+            android:layout_marginTop="@dimen/margin_70dp"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:background="@drawable/background_edittext_two"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:padding="@dimen/margin_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_welcome_back"
+            tools:ignore="TouchTargetSizeCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            style="@style/text_style_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:text="@string/password"
+            app:layout_constraintBottom_toTopOf="@id/edt_password"
+            app:layout_constraintStart_toStartOf="@id/edt_password" />
+
+        <TextView
+            android:id="@+id/tv_remember_me"
+            style="@style/text_style_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_40dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:text="@string/remember_me"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_password" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edt_password"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_40dp"
+            android:layout_marginTop="@dimen/margin_40dp"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:background="@drawable/background_two"
+            android:text="@string/log_in"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_remember_me"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

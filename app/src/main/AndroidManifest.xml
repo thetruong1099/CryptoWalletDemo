@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.dds.cryptowallet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".presentation.application.CryptoWalletApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CryptoWallet">
+        <activity
+            android:name=".presentation.ui.activity.SendTokenScreen.ConfirmTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.SendTokenScreen.SetAmountActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".presentation.ui.activity.SendTokenScreen.SendTokenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.loginScreen.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.homeScreen.HomeActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".presentation.ui.activity.qrCode.QRCodeScannerActivity"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".presentation.ui.activity.walletSetupScreen.WalletSetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.splashScreen.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.ui.activity.mainScreen.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Crypto Wallet</string>
+
+    <string name="todo">TODO</string>
+
+    <!--splash screen-->
+
+    <string name="get_start">Get Start</string>
+
+    <string name="welcome_to_metamask">Welcome To Metamask</string>
+    <string name="manage_your_digital_assets">Manage your digital assets</string>
+    <string name="your_gateway_to_web3">Your gateway to web3</string>
+
+    <string name="metamask_introduce">Trust by millions, MetaMask is a secure wallet making the world of web3 accessible to all.</string>
+    <string name="manage_assets_description">Store, spend and send digital assets like tokens ethereum, unique collectible.</string>
+    <string name="gateway_to_web3_description">Login with MetaMask and make transactions to invest, earn, play game, sell and more!</string>
+
+
+    <!--password strength-->
+
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+
+    <!--wallet set up-->
+
+    <string name="wallet_setup">Wallet Setup</string>
+    <string name="wallet_setup_description">Import an existing wallet or create a new one</string>
+    <string name="import_using_secret_recovery_phrase">Import using Secret Recovery Phrase</string>
+    <string name="create_a_new_wallet">Create a new wallet</string>
+    <string name="by_proceeding_you_agree_to_these_terms_and_condition">By proceeding, you agree to these <u>Terms and Conditions</u>.</string>
+
+    <!--import seed phrase-->
+    <string name="import_from_seed">Import form seed</string>
+    <string name="enter_your_secret_recovery_phrase">Enter your Secret Recovery Phrase</string>
+    <string name="secret_recovery_phrase">Secret recovery phrase</string>
+    <string name="_import">Import</string>
+    <string name="remember_me">Remember me</string>
+    <string name="check_secret_phrase_password_again">Check Secret Phrase or Password again</string>
+    <string name="yes">Yes</string>
+
+    <!--password-->
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="least_8_character">Must be at least 8 character</string>
+    <string name="password_strength">Password strength:</string>
+
+    <string name="accept_all_permission">Please Accept all the permissions</string>
+
+
+    <!--    set password-->
+    <string name="create_password">Create Password</string>
+    <string name="password_unlock_metamask_in_device">This password will unlock your MetaMask wallet only on this device</string>
+    <string name="metamask_cannot_recover_password">I understand that MetaMask cannot recover this password for me.</string>
+    <string name="check_password_strength_or_policy_again">Check Password Strength or Agree Policy again</string>
+
+    <!--    create wallet-->
+    <string name="create_wallet">Create Wallet</string>
+
+    <!-- show seed phrase -->
+    <string name="write_down_secret_recovery_phrase">Write down your Secret Recovery Phrase</string>
+    <string name="secret_recovery_phrase_introduce">This is your Secret Recovery Phrase. Write it down on a page and keep it in a safe place. You\'ll be asked to re-enter this phrase (in order) on the next step.</string>
+    <string name="_continue">Continue</string>
+
+    <string name="seed_phrase_word">1. Open</string>
+    <string name="number_one">1.</string>
+
+    <string name="select_each_word">Select each word in the order it was presented to you</string>
+    <string name="complete_backup">Complete Backup</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="setting">Setting</string>
+    <string name="log_out">Log Out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="receive">Receive</string>
+
+    <string name="account_1">Account 1</string>
+    <string name="balance">$0</string>
+    <string name="public_address">0x0</string>
+    <string name="send">Send</string>
+    <string name="add_funds">Add funds</string>
+
+    <string name="amount_eth">0 ETH</string>
+
+    <string name="gas_fee">Estimated gas fee</string>
+    <string name="gas_fee_eth">0 ETH</string>
+    <string name="total">Total</string>
+    <string name="eth">ETH</string>
+
+    <string name="protect_your_wallet">Protect your wallet</string>
+    <string name="protect_your_wallet_description">Protect your wallet by saving your Secret Recovery Phrase in various places like on a piece of paper password manager and/or the cloud</string>
+    <string name="reveal_secret_recovery_phrase">Reveal Secret Recovery Phrase</string>
+    <string name="change_password">Change Password</string>
+    <string name="password">Password</string>
+    <string name="password_description">Chose a strong password to unlock crypto app on your device. If you lose this password, you will need your Secret Recovery Phrase to re-import your wallet</string>
+    <string name="show_private_key_for">Show private key for</string>
+    <string name="show_private_key_description">This is the private key for the current selected account. Never disclose this key. anyone with your private key can fully control your account, including transferring away any of your funds</string>
+    <string name="show_private_key">Show private key</string>
+
+    <string name="enter_password_to_continue">Enter password to continue</string>
+    <string name="next">Next</string>
+    <string name="cancel">Cancel</string>
+    <string name="password_not_correct">password not correct</string>
+
+    <string name="your_secret_recovery_phrase">Your Secret Recovery Phrase</string>
+    <string name="text">TEXT</string>
+    <string name="qr_code">QR CODE</string>
+
+    <string name="your_private_key">Your Private Key</string>
+
+    <string name="change_password_description">This password will unlock your wallet only on this device.</string>
+    <string name="require_password_length_least_8_character">Must be at least 8 characters</string>
+    <string name="reset_password">Reset Password</string>
+
+    <string name="welcome_back">Welcome back</string>
+    <string name="log_in">Log in</string>
+
+    <string name="scan_address_to_receive_payment">Scan address to receive payment</string>
+    <string name="copy_success">Copied text to clipboard</string>
+
+    <string name="send_to">Send To</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="recent">Recent</string>
+    <string name="balance_ether">Balance: 0 ETH</string>
+
+    <string name="amount">Amount</string>
+    <string name="zero_number">0</string>
+
+    <string name="confirm">Confirm</string>
+
+    <string name="insufficient_balance">Insufficient balance</string>
+    <string name="amount_has_not_been_set">Amount has not been set</string>
+
+    <string name="tokens">TOKENS</string>
+    <string name="nfts">NFTS</string>
+
+    <string name="import_nft">import nft</string>
+    <string name="import_token">import token</string>
+
+    <string name="edit_text_empty">Collectible identifier can\'t be empty</string>
+
+    <string name="address">Address</string>
+    <string name="id">ID</string>
+
+    <string name="token_address">Token_Address</string>
+    <string name="token_symbol">Token Symbol</string>
+    <string name="token_of_precision">Token of Precision</string>
+
+    <string name="contract_address">0x...</string>
+    <string name="enter_the_collectible_id">Enter the collectible ID</string>
+
+    <string name="nft_name">nft</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_style_one">
+        <item name="fontFamily">@font/oswald_semi_bold</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/blue_1</item>
+    </style>
+
+    <style name="text_style_two">
+        <item name="fontFamily">@font/oswald_bold</item>
+        <item name="android:textSize">@dimen/text_size_24sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_style_three">
+        <item name="fontFamily">@font/oswald_regular</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+    <style name="text_style_four">
+        <item name="fontFamily">@font/oswald_regular</item>
+        <item name="android:textSize">@dimen/text_size_12sp</item>
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+    <style name="text_style_five">
+        <item name="fontFamily">@font/oswald_regular</item>
+        <item name="android:textSize">@dimen/text_size_28sp</item>
+        <item name="android:textColor">@color/gray_1</item>
+    </style>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".presentation.ui.fragment.walletSetupScreen.SeedPhraseShowFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/text_style_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_40dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:gravity="center"
+            android:text="@string/write_down_secret_recovery_phrase"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_notification"
+            style="@style/text_style_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_40dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:gravity="center"
+            android:text="@string/secret_recovery_phrase_introduce"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_40dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/margin_40dp"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            app:cardCornerRadius="@dimen/size_40dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_notification">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_seed_phrase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_20dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/text_style_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_50dp"
+            android:layout_marginEnd="@dimen/margin_50dp"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:background="@drawable/background_two"
+            android:text="@string/_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/margin_40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view"
+            tools:ignore="TextContrastCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
